@@ -1,0 +1,83 @@
+#heading {
+    text-align: center;
+  }
+  #box0 {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 2px solid #000;
+    font-size: initial; /* Reset font-size to browser default */
+   position: relative; 
+    left: 600px;/* Position the cube relative to the box */
+  }
+  
+  #cube {
+    height: 10px;
+    width: 10px;
+    border: 2px solid black;
+    margin-top: 20px;
+    padding-left: 2px;
+    border-bottom: none;
+    border-right: none;
+   position: relative;
+    top: 50%;  /* Vertically center the cube */
+    right: -150px; /* Position the cube at the right edge of box0 */
+    transform:rotate(45deg) /* Correct vertical alignment */
+  }
+  #cube:hover{
+    transform:rotate(225deg) 
+  }
+  #box1, #box2, #box3, #box4 {
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: space-evenly; /* Distribute content evenly */
+    padding: 5px 10px; /* Reduced padding to make the box more compact */
+    border: 2px solid black;
+    font-size: initial; /* Reset font-size to default */
+    opacity: 0; /* Keep opacity 0 for initially hidden boxes */
+    transition: opacity 0.3s ease;
+    margin: 5px;
+    width: 200px; /* Set fixed width of 100px */
+    height: auto; /* Let the box height adjust based on content */
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+    overflow: hidden; /* Hide overflowing content if it exceeds the width */
+  }
+  #box1, #box2, #box3, #box4 :hover{
+    cursor: pointer;
+  }
+  
+  #box1 {
+   position: relative;
+     top: 100px; 
+     left:650px;
+     transform: scale(1.4)
+  }
+  #box2 {
+   position: relative;
+     top: 150px; 
+     left:650px;
+     transform: scale(1.4)
+    }
+  #box3 { 
+   position: relative;
+    top: 200px;
+    left:650px;
+    transform: scale(1.4)
+   }
+  #box4 { 
+   position: relative;
+    top: 250px; 
+    left:650px;
+    transform: scale(1.4)
+  }
+  
+  .pressed {
+    transform: rotate(225deg);
+  }
+  
+  #icon1, #icon2, #icon3, #icon4 {
+    margin-right: 5px; /* Reduced margin for icons */
+  }
+  
